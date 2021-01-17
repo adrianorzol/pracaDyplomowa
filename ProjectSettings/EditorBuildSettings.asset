@@ -4,5 +4,41 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/main.unity
+    guid: b5283ba82bf8cce4eb2b51fb6bd8d549
+  - enabled: 1
+    path: Assets/Scenes/WMiI.unity
+    guid: 66ceb0746c62ed449914dfd5772ecb6b
+  - enabled: 1
+    path: Assets/Scenes/WBiB.unity
+    guid: 435bfa116d4ea2241987a913f5aeed77
+  - enabled: 1
+    path: Assets/Scenes/WBZ.unity
+    guid: adce1b6947b28bd4f84d83d6c8904a82
+  - enabled: 1
+    path: Assets/Scenes/WG.unity
+    guid: ecb7d01445a839a49b1f559ec861bfcb
+  - enabled: 1
+    path: Assets/Scenes/WH.unity
+    guid: d8b4854a69320e9439c35c0219b2290b
+  - enabled: 1
+    path: Assets/Scenes/WMW.unity
+    guid: be1a290758f357a4a83a0ac889f9b9be
+  - enabled: 1
+    path: Assets/Scenes/WNE.unity
+    guid: b873f9bb5012fe44498d1aaa6cec9d93
+  - enabled: 1
+    path: Assets/Scenes/WNoZ.unity
+    guid: 0ab63f4f6b568b7439bb630732a159fd
+  - enabled: 1
+    path: Assets/Scenes/WNT.unity
+    guid: d2b432d012db18f46a1bad2df99516f2
+  - enabled: 1
+    path: Assets/Scenes/WPiA.unity
+    guid: 10f64dfb02839e4418917f4a29aed9f3
+  - enabled: 1
+    path: Assets/Scenes/WRiL.unity
+    guid: 3e7bb654f824c7b468a1f75d1a1cc58f
   m_configObjects: {}
