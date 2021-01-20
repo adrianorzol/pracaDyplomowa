@@ -12,8 +12,6 @@ public class Zegar : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        // Starts the timer automatically
-        
     }
 
     void Update()
