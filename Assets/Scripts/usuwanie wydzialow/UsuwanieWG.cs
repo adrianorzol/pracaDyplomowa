@@ -15,6 +15,17 @@ public class UsuwanieWG : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        
+    }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWG"))
+        {
+            if (GameObject.Find("ZegarWG").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20458.08f, 53760.48f, -9.696777f);
+            }
+        }
 
     }
 }

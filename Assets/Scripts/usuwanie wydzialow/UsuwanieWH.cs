@@ -17,4 +17,15 @@ public class UsuwanieWH : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWH"))
+        {
+            if (GameObject.Find("ZegarWH").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20456.38f, 53750.05f, -9.696777f);
+            }
+        }
+
+    }
 }

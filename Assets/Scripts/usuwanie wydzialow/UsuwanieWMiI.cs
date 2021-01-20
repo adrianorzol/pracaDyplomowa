@@ -17,4 +17,15 @@ public class UsuwanieWMiI : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWMiI"))
+        {
+            if (GameObject.Find("ZegarWMiI").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20455.9f, 53743.55f, -8.429688f);
+            }
+        }
+
+    }
 }

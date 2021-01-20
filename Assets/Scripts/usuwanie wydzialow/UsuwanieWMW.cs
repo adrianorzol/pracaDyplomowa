@@ -17,4 +17,15 @@ public class UsuwanieWMW : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWMW"))
+        {
+            if (GameObject.Find("ZegarWMW").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20457.45f, 53749.12f, -12.43292f);
+            }
+        }
+
+    }
 }

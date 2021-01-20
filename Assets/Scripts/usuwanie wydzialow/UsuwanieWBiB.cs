@@ -17,4 +17,15 @@ public class UsuwanieWBiB : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if(GameObject.Find("ZegarWBiB"))
+        {
+            if (GameObject.Find("ZegarWBiB").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20460.75f, 53759.12f, -9.088684f);
+            }
+        }
+        
+    }
 }

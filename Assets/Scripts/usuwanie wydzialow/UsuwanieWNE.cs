@@ -17,4 +17,15 @@ public class UsuwanieWNE : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWNE"))
+        {
+            if (GameObject.Find("ZegarWNE").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20460.67f, 53760.23f, -12.45557f);
+            }
+        }
+
+    }
 }

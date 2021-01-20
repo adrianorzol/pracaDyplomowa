@@ -17,4 +17,15 @@ public class UsuwanieWNT : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWNT"))
+        {
+            if (GameObject.Find("ZegarWNT").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20459.88f, 53754.31f, -12.45557f);
+            }
+        }
+
+    }
 }

@@ -17,4 +17,15 @@ public class UsuwanieWNoZ : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWNoZ"))
+        {
+            if (GameObject.Find("ZegarWNoZ").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20459.42f, 53760.75f, -12.63323f);
+            }
+        }
+
+    }
 }

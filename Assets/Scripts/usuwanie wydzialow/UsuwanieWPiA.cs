@@ -17,4 +17,15 @@ public class UsuwanieWPiA : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWPiA"))
+        {
+            if (GameObject.Find("ZegarWPiA").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20458.27f, 53750.57f, -1.296182f);
+            }
+        }
+
+    }
 }

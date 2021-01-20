@@ -39,6 +39,10 @@ public class licznikOcen : MonoBehaviour
                 case 2:
                     GetComponent<Image>().sprite = sprite_3;
                     licznik++;
+                    if(GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name))
+                        GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name).transform.position = new Vector3(1000f, 1000f, 1000f);
+                    GameObject.Find("Zegar" + SceneManager.GetActiveScene().name).GetComponent<Zegar>().timerIsRunning = true;
+
                     SceneManager.LoadScene(sceneName: "main");
                     break;
             }
@@ -47,11 +51,12 @@ public class licznikOcen : MonoBehaviour
         }
         else
         {
+            if (GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name))
+                GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name).transform.position = new Vector3(0f, 0f, 0f);
+            Destroy(GameObject.Find("Zegar" + SceneManager.GetActiveScene().name));
             SceneManager.LoadScene(sceneName: "main");
-            
-            
-            
-            
+
+
         }
             
     }

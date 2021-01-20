@@ -17,4 +17,15 @@ public class UsuwanieWBZ : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWBZ"))
+        {
+            if (GameObject.Find("ZegarWBZ").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20460.22f, 53757.57f, -9.043457f);
+            }
+        }
+
+    }
 }

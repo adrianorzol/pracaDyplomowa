@@ -17,4 +17,15 @@ public class UsuwanieWRiL : MonoBehaviour
 
 
     }
+    void Update()
+    {
+        if (GameObject.Find("ZegarWRiL"))
+        {
+            if (GameObject.Find("ZegarWRiL").GetComponent<Zegar>().timeRemaining <= 0.5f)
+            {
+                transform.position = new Vector3(20459.63f, 53759.12f, -11.5979f);
+            }
+        }
+
+    }
 }
