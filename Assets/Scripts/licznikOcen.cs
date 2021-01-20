@@ -24,6 +24,7 @@ public class licznikOcen : MonoBehaviour
     // Update is called once per frame
     void Klik()
     {
+
         if (GetComponent<lapanie>().czyZlapany == false)
         {
             switch(licznik)
@@ -60,4 +61,5 @@ public class licznikOcen : MonoBehaviour
         }
             
     }
+
 }

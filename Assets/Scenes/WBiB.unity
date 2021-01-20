@@ -374,6 +374,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2120228498 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5153058434685926692, guid: 0e2da01185b3a2445b889da1e539dec6,
+    type: 3}
+  m_PrefabInstance: {fileID: 5153058436009987682}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2761375580615337132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -490,6 +496,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WyjscieWBiB
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935623250207780379, guid: 7985227d1ecad6c45b966da691877d47,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8935623250207780580, guid: 7985227d1ecad6c45b966da691877d47,
         type: 3}
@@ -624,6 +635,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5153058434685926692, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 42f9308ecf1753645bce704ef460ebf7, type: 2}
+    - target: {fileID: 5153058434685926695, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153058434685926695, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153058434685926695, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 5153058435045006513, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
       propertyPath: m_Name
@@ -734,6 +765,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5153058435074375896, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: animacjaRzutu
+      value: 
+      objectReference: {fileID: 2120228498}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e2da01185b3a2445b889da1e539dec6, type: 3}
 --- !u!224 &5153058436009987683 stripped
