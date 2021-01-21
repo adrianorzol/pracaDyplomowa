@@ -289,7 +289,7 @@ PrefabInstance:
     - target: {fileID: 3159553370460273423, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
       propertyPath: m_Text
-      value: "Niestety WH-mon uciek\u0142. Ale powr\xF3ci tu za 5 minut."
+      value: "Niestety WH-mon uciek\u0142. \nAle powr\xF3ci tu za 5 minut."
       objectReference: {fileID: 0}
     - target: {fileID: 5153058435045006513, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
