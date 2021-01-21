@@ -23,6 +23,8 @@ public class ZatrzymanieLosowania : MonoBehaviour
         GetComponent<CanvasGroup>().alpha = 1;
         animacja.SetTrigger("Start");
         yield return new WaitForSeconds(1f);
+        if (GameObject.Find("LicznikSzans").GetComponent<lapanie>().czyZlapany == true)
+            yield return new WaitForSeconds(0.5f);
         animacja.SetTrigger("Stop");
         GetComponent<CanvasGroup>().alpha = 0;
     }

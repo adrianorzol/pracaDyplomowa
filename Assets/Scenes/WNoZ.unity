@@ -269,7 +269,27 @@ PrefabInstance:
     - target: {fileID: 1438674658306202297, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2956304382659788622, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: m_Text
+      value: "Gratulacje!\nUda\u0142o Ci si\u0119 z\u0142apa\u0107 WNo\u017B-mona!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2956304382759436409, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159553369960706132, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159553370460273423, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: m_Text
+      value: "Niestety WNo\u017B-mon uciek\u0142. \nAle powr\xF3ci tu za 5 minut."
       objectReference: {fileID: 0}
     - target: {fileID: 5153058435045006513, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
@@ -381,6 +401,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5153058435074375896, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: zlapanie
+      value: 
+      objectReference: {fileID: 1198356021}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e2da01185b3a2445b889da1e539dec6, type: 3}
 --- !u!1 &389686673

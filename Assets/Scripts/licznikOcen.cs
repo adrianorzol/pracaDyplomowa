@@ -12,6 +12,7 @@ public class licznikOcen : MonoBehaviour
     public Sprite sprite_3;
     public int licznik = 0;
     public Animator animacja;
+    public Animator zlapanie;
     
     // Start is called before the first frame update
     void Start()
@@ -33,25 +34,36 @@ public class licznikOcen : MonoBehaviour
     {
         animacja.SetTrigger("Rzut");
         yield return new WaitForSeconds(1f);
-        animacja.SetTrigger("Powrot");
         
+
         if (GetComponent<lapanie>().czyZlapany == false)
         {
             switch (licznik)
             {
                 case 0:
+                    
+                    animacja.SetTrigger("Powrot");
                     GetComponent<Image>().sprite = sprite_1;
                     licznik++;
                     break;
                 case 1:
+                   
+                    animacja.SetTrigger("Powrot");
                     GetComponent<Image>().sprite = sprite_2;
                     licznik++;
                     break;
                 case 2:
+                    
+                    animacja.SetTrigger("Powrot");
                     GetComponent<Image>().sprite = sprite_3;
                     licznik++;
+                    zlapanie.SetTrigger("Ucieczka");
+                    yield return new WaitForSeconds(1.5f);
+                    animacja.SetTrigger("Powrot");
                     if (GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name))
                         GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name).transform.position = new Vector3(1000f, 1000f, 1000f);
+                    GameObject.Find("NieudaneZlapanie").GetComponent<CanvasGroup>().alpha = 1;
+                    yield return new WaitForSeconds(3f);
                     GameObject.Find("Zegar" + SceneManager.GetActiveScene().name).GetComponent<Zegar>().timerIsRunning = true;
 
                     SceneManager.LoadScene(sceneName: "main");
@@ -62,9 +74,15 @@ public class licznikOcen : MonoBehaviour
         }
         else
         {
+            zlapanie.SetTrigger("Zlapanie");
+            
+            yield return new WaitForSeconds(0.5f);
+            animacja.SetTrigger("Powrot");
             if (GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name))
                 GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name).transform.position = new Vector3(0f, 0f, 0f);
             Destroy(GameObject.Find("Zegar" + SceneManager.GetActiveScene().name));
+            GameObject.Find("UdaneZlapanie").GetComponent<CanvasGroup>().alpha = 1;
+            yield return new WaitForSeconds(3f);
             SceneManager.LoadScene(sceneName: "main");
 
 
