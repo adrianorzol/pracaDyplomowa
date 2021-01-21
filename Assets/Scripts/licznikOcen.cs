@@ -11,6 +11,7 @@ public class licznikOcen : MonoBehaviour
     public Sprite sprite_2;
     public Sprite sprite_3;
     public int licznik = 0;
+    public Animator animacja;
     
     // Start is called before the first frame update
     void Start()
@@ -24,10 +25,19 @@ public class licznikOcen : MonoBehaviour
     // Update is called once per frame
     void Klik()
     {
-
+        StartCoroutine(Rzucanie());
+        
+        
+    }
+    IEnumerator Rzucanie()
+    {
+        animacja.SetTrigger("Rzut");
+        yield return new WaitForSeconds(1f);
+        animacja.SetTrigger("Powrot");
+        
         if (GetComponent<lapanie>().czyZlapany == false)
         {
-            switch(licznik)
+            switch (licznik)
             {
                 case 0:
                     GetComponent<Image>().sprite = sprite_1;
@@ -40,15 +50,15 @@ public class licznikOcen : MonoBehaviour
                 case 2:
                     GetComponent<Image>().sprite = sprite_3;
                     licznik++;
-                    if(GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name))
+                    if (GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name))
                         GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name).transform.position = new Vector3(1000f, 1000f, 1000f);
                     GameObject.Find("Zegar" + SceneManager.GetActiveScene().name).GetComponent<Zegar>().timerIsRunning = true;
 
                     SceneManager.LoadScene(sceneName: "main");
                     break;
             }
-            
-            
+
+
         }
         else
         {
@@ -59,7 +69,5 @@ public class licznikOcen : MonoBehaviour
 
 
         }
-            
     }
-
 }

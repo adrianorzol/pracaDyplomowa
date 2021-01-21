@@ -374,6 +374,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1551679363 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5153058434685926693, guid: 0e2da01185b3a2445b889da1e539dec6,
+    type: 3}
+  m_PrefabInstance: {fileID: 5153058436009987682}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &2120228498 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5153058434685926692, guid: 0e2da01185b3a2445b889da1e539dec6,
@@ -540,7 +552,7 @@ PrefabInstance:
     - target: {fileID: 8935623250207780580, guid: 7985227d1ecad6c45b966da691877d47,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8935623250207780580, guid: 7985227d1ecad6c45b966da691877d47,
         type: 3}
@@ -635,6 +647,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2316703331343603736, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5153058434685926692, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
       propertyPath: m_Controller
@@ -770,6 +787,16 @@ PrefabInstance:
       propertyPath: animacjaRzutu
       value: 
       objectReference: {fileID: 2120228498}
+    - target: {fileID: 5153058435074375896, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: animacja
+      value: 
+      objectReference: {fileID: 2120228498}
+    - target: {fileID: 6978454287725654759, guid: 0e2da01185b3a2445b889da1e539dec6,
+        type: 3}
+      propertyPath: przycisk
+      value: 
+      objectReference: {fileID: 1551679363}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e2da01185b3a2445b889da1e539dec6, type: 3}
 --- !u!224 &5153058436009987683 stripped
