@@ -13,6 +13,7 @@ public class licznikOcen : MonoBehaviour
     public int licznik = 0;
     public Animator animacja;
     public Animator zlapanie;
+    public bool czyZlapany = false;
     
     // Start is called before the first frame update
     void Start()
@@ -74,6 +75,7 @@ public class licznikOcen : MonoBehaviour
         }
         else
         {
+            czyZlapany = true;
             zlapanie.SetTrigger("Zlapanie");
             
             yield return new WaitForSeconds(0.5f);

@@ -415,7 +415,7 @@ PrefabInstance:
     - target: {fileID: 1438674658306202297, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2956304382659788622, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
@@ -430,7 +430,7 @@ PrefabInstance:
     - target: {fileID: 3159553369960706132, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3159553370460273423, guid: 0e2da01185b3a2445b889da1e539dec6,
         type: 3}
@@ -564,7 +564,7 @@ PrefabInstance:
     - target: {fileID: 2761375579667866731, guid: 93d9946eecb222c44b51d848accfe172,
         type: 3}
       propertyPath: m_Name
-      value: TextWMiI
+      value: TextZegarWMiI
       objectReference: {fileID: 0}
     - target: {fileID: 2761375579753859089, guid: 93d9946eecb222c44b51d848accfe172,
         type: 3}
@@ -626,6 +626,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2761375579753859091, guid: 93d9946eecb222c44b51d848accfe172,
+        type: 3}
+      propertyPath: timeText
+      value: 
+      objectReference: {fileID: 2129457242}
     - target: {fileID: 2761375580090420206, guid: 93d9946eecb222c44b51d848accfe172,
         type: 3}
       propertyPath: m_Name
@@ -633,6 +638,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93d9946eecb222c44b51d848accfe172, type: 3}
+--- !u!1 &2129457242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2761375579667866731, guid: 93d9946eecb222c44b51d848accfe172,
+    type: 3}
+  m_PrefabInstance: {fileID: 2129457241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6996461710590548647
 PrefabInstance:
   m_ObjectHideFlags: 0

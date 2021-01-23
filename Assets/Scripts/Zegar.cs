@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Zegar : MonoBehaviour
 {
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
-    public Text timeText;
+    public GameObject timeText;
 
     private void Start()
     {
@@ -31,15 +32,27 @@ public class Zegar : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
-    }
+        if (GameObject.Find(name + "Plecak"))
+        {
+            timeText = GameObject.Find(name + "Plecak");
+            GameObject.Find(name + "Plecak").GetComponent<CanvasGroup>().alpha = 1;
+        }
+        
 
+
+    }
+    void Awake()
+    {
+        
+            
+    }
     void DisplayTime(float timeToDisplay)
     {
         timeToDisplay += 1;
 
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-
-        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        if(timeText)
+            timeText.GetComponent<Text>().text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
