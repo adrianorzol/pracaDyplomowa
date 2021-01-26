@@ -9,6 +9,7 @@ public class gpsLocation : MonoBehaviour
     private float longitude;
     private float latitude;
     
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,22 +21,26 @@ public class gpsLocation : MonoBehaviour
 
     private IEnumerator GetLocation()
     {
-        Input.location.Start();
-        while(Input.location.status == LocationServiceStatus.Initializing)
-        {
-            yield return new WaitForSeconds(0.5f);
-        }
-        latitude = Input.location.lastData.latitude;
-        longitude = Input.location.lastData.longitude;
-        yield break;
+       
+            Input.location.Start();
+            while (Input.location.status == LocationServiceStatus.Initializing)
+            {
+                yield return new WaitForSeconds(0.5f);
+            }
+            latitude = Input.location.lastData.latitude;
+            longitude = Input.location.lastData.longitude;
+            yield break;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
        
-        latitude = Input.location.lastData.latitude * 1000;
-        longitude = Input.location.lastData.longitude * 1000;
-        gameObject.transform.position = new Vector3(longitude, latitude, 0f);
+            latitude = Input.location.lastData.latitude * 1000;
+            longitude = Input.location.lastData.longitude * 1000;
+            gameObject.transform.position = new Vector3(longitude, latitude, 0f);
+        
+        
     }
 }
