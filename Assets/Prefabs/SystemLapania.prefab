@@ -399,7 +399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -210, y: -80}
+  m_AnchoredPosition: {x: -210, y: -150}
   m_SizeDelta: {x: 376, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5153058435074375903
@@ -472,6 +472,9 @@ MonoBehaviour:
   licznik: 0
   animacja: {fileID: 5153058434685926692}
   zlapanie: {fileID: 0}
+  czyZlapany: 0
+  udany: {fileID: 0}
+  nieudany: {fileID: 0}
 --- !u!1001 &2241484071162619993
 PrefabInstance:
   m_ObjectHideFlags: 0
