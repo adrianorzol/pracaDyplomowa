@@ -7,6 +7,7 @@ public class ObslugaPrzyciskow : MonoBehaviour
 {
     public Animator animator;
     public string tekst;
+    public GameObject pinezka;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +16,10 @@ public class ObslugaPrzyciskow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Klik()
+    public void Klik()
     {
+        if(pinezka)
+            pinezka.GetComponent<CanvasGroup>().alpha = 0;
         StartCoroutine(Guzik());
         
     }

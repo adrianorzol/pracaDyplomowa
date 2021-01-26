@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class gpsLocation : MonoBehaviour
 {
     private float longitude;
     private float latitude;
-    private Transform trans;
+    
     // Start is called before the first frame update
     void Start()
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
-        trans = GetComponent<Transform>();
+        
         if (Input.location.isEnabledByUser)
             StartCoroutine(GetLocation());
     }
@@ -32,6 +33,7 @@ public class gpsLocation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         latitude = Input.location.lastData.latitude * 1000;
         longitude = Input.location.lastData.longitude * 1000;
         gameObject.transform.position = new Vector3(longitude, latitude, 0f);

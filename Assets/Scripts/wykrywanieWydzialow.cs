@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class wykrywanieWydzialow : MonoBehaviour
@@ -8,6 +9,8 @@ public class wykrywanieWydzialow : MonoBehaviour
     private GameObject WBiB, WBZ, WG, WH, WMiI, WMW, WNE, WNoZ, WNT, WPiA, WRiL;
     public Animator animWBiB, animWBZ, animWG, animWH, animWMiI, animWMW, animWNE, animWNoZ, animWNT, animWPiA, animWRiL;
     public float czasAnimacji = 1f;
+    public Toggle suwak;
+    public Toggle suwak2;
 
     private void Awake()
     {
@@ -24,6 +27,7 @@ public class wykrywanieWydzialow : MonoBehaviour
         WRiL = GameObject.FindGameObjectWithTag("WRiL");
 
     }
+   
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,88 +35,218 @@ public class wykrywanieWydzialow : MonoBehaviour
         {
             
             DontDestroyOnLoad(WBiB);
-            
-            Handheld.Vibrate();
+            if(suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WBiB", animWBiB));
         }
         if (collision.gameObject.name == "WBZ")
         {
             
             DontDestroyOnLoad(WBZ);
-            
-            Handheld.Vibrate();
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WBZ", animWBZ));
         }
         if (collision.gameObject.name == "WG")
         {
             
             DontDestroyOnLoad(WG);
-            
-            Handheld.Vibrate();
+
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WG", animWG));
         }
         if (collision.gameObject.name == "WH")
         {
             
             DontDestroyOnLoad(WH);
-            
-            Handheld.Vibrate();
+
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WH", animWH));
         }
         if (collision.gameObject.name == "WMiI")
         {
             
             DontDestroyOnLoad(WMiI);
-            
-            Handheld.Vibrate();
+
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WMiI", animWMiI));
         }
         if (collision.gameObject.name == "WMW")
         {
             
             DontDestroyOnLoad(WMW);
-            
-            Handheld.Vibrate();
+
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WMW", animWMW));
         }
         if (collision.gameObject.name == "WNE")
         {
             
             DontDestroyOnLoad(WNE);
-            
-            Handheld.Vibrate();
+
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WNE", animWNE));
         }
         if (collision.gameObject.name == "WNoZ")
         {
             
             DontDestroyOnLoad(WNoZ);
-            
-            Handheld.Vibrate();
+
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WNoZ", animWNoZ));
         }
         if (collision.gameObject.name == "WNT")
         {
             
             DontDestroyOnLoad(WNT);
-           
-            Handheld.Vibrate();
+
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WNT", animWNT));
         }
         if (collision.gameObject.name == "WPiA")
         {
             
             DontDestroyOnLoad(WPiA);
-            
-            Handheld.Vibrate();
+
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WPiA", animWPiA));
         }
         if (collision.gameObject.name == "WRiL")
         {
             
             DontDestroyOnLoad(WRiL);
-            
-            Handheld.Vibrate();
+
+            if (suwak.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = false;
+                Handheld.Vibrate();
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyWibracje = true;
+            if (suwak2.isOn == false)
+            {
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = false;
+            }
+            else
+                GameObject.Find("Zamykanie").GetComponent<ZamykanieAplikacji>().czyDzwiek = true;
             StartCoroutine(przejscie("WRiL", animWRiL));
         }
 
@@ -126,4 +260,5 @@ public class wykrywanieWydzialow : MonoBehaviour
 
         SceneManager.LoadScene(sceneName: wydzial);
     }
+    
 }
