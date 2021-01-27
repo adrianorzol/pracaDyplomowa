@@ -71,6 +71,7 @@ public class licznikOcen : MonoBehaviour
                     if (GameObject.Find("Muzyka").GetComponent<AudioSource>().mute == false)
                         nieudany.Play();
                     yield return new WaitForSeconds(3f);
+                    GameObject.Find("Zegar" + SceneManager.GetActiveScene().name).GetComponent<Zegar>().timeRemaining = 300;
                     GameObject.Find("Zegar" + SceneManager.GetActiveScene().name).GetComponent<Zegar>().timerIsRunning = true;
 
                     SceneManager.LoadScene(sceneName: "main");
@@ -88,7 +89,8 @@ public class licznikOcen : MonoBehaviour
             animacja.SetTrigger("Powrot");
             if (GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name))
                 GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name).transform.position = new Vector3(0f, 0f, 0f);
-            Destroy(GameObject.Find("Zegar" + SceneManager.GetActiveScene().name));
+            GameObject.Find("Zegar" + SceneManager.GetActiveScene().name).GetComponent<Zegar>().timerIsRunning = false;
+            GameObject.Find("Zegar" + SceneManager.GetActiveScene().name).GetComponent<Zegar>().timeRemaining = 300;
             Destroy(GameObject.Find("Muzyka"));
             if(GameObject.Find("Muzyka").GetComponent<AudioSource>().mute == false)
                 udany.Play();

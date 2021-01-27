@@ -556,6 +556,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZegarWNE
       objectReference: {fileID: 0}
+    - target: {fileID: 2761375579753859089, guid: 93d9946eecb222c44b51d848accfe172,
+        type: 3}
+      propertyPath: m_TagString
+      value: ZegarWNE
+      objectReference: {fileID: 0}
     - target: {fileID: 2761375579753859090, guid: 93d9946eecb222c44b51d848accfe172,
         type: 3}
       propertyPath: m_LocalPosition.x

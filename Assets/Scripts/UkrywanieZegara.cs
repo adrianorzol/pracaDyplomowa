@@ -14,7 +14,7 @@ public class UkrywanieZegara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("Zegar" + wydzial) == null)
+        if(GameObject.Find("Zegar" + wydzial).GetComponent<Zegar>().timerIsRunning == false)
         {
             GetComponent<CanvasGroup>().alpha = 0;
         }

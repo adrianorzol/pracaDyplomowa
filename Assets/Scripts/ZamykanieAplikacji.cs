@@ -8,10 +8,17 @@ public class ZamykanieAplikacji : MonoBehaviour
     public bool czyWibracje;
     public bool czyDzwiek;
     public static ZamykanieAplikacji instance;
+    
     // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        ProgresUstawien data = SystemZapisywaniaUstawien.WczytaniePostepu();
+        if (data != null)
+        {
+            czyWibracje = data.wibracje;
+            czyDzwiek = data.dzwiek;
+        }
     }
     void Awake()
     {
@@ -27,6 +34,8 @@ public class ZamykanieAplikacji : MonoBehaviour
         {
             GameObject.Find("ToggleDzwiek").GetComponent<Toggle>().isOn = czyDzwiek;
         }
+        
+        
     }
     // Update is called once per frame
     void Update()
