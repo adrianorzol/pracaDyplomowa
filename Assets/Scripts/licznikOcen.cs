@@ -61,6 +61,7 @@ public class licznikOcen : MonoBehaviour
                     animacja.SetTrigger("Powrot");
                     GetComponent<Image>().sprite = sprite_3;
                     licznik++;
+                    GameObject.Find("LosowanieOcen").SetActive(false);
                     zlapanie.SetTrigger("Ucieczka");
                     yield return new WaitForSeconds(1.5f);
                     animacja.SetTrigger("Powrot");
@@ -84,7 +85,7 @@ public class licznikOcen : MonoBehaviour
         {
             czyZlapany = true;
             zlapanie.SetTrigger("Zlapanie");
-            
+            GameObject.Find("LosowanieOcen").SetActive(false);
             yield return new WaitForSeconds(0.5f);
             animacja.SetTrigger("Powrot");
             if (GameObject.FindGameObjectWithTag(SceneManager.GetActiveScene().name))
