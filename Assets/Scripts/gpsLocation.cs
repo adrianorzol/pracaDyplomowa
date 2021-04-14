@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
@@ -17,6 +18,8 @@ public class gpsLocation : MonoBehaviour
         
         if (Input.location.isEnabledByUser)
             StartCoroutine(GetLocation());
+        else
+            Permission.RequestUserPermission(Permission.FineLocation);
     }
 
     private IEnumerator GetLocation()
