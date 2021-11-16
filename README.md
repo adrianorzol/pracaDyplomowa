@@ -43,7 +43,7 @@ List the ready features here:
 
 ## Setup
 - To run app on Android device just download and install [Kortomony.apk](./Kortomony.apk)
-- You need a device with android 5.0 or higher
+- You need a device with Android 5.0 or higher
 - You have to be in area of Kortowo Campus in Olsztyn, otherwise use some mock location app
 - You can also use some Android emulator on your PC, personaly I used [LDPlayer](https://www.ldplayer.net/) to work on this project
 
