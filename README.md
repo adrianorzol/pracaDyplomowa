@@ -33,12 +33,17 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+<p>
+<img src="./screenshots/ekranGlowny1.png" alt="main screen" width="200"/>
+<img src="./screenshots/ekranStartowy1.png" alt="startign screen" width="200"/>
+<img src="./screenshots/lapanie.png" alt="catching a Kortomon" width="200"/>
+<img src="./screenshots/plecak.png" alt="your collection" width="200"/>
+</p>
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+To run app on Android device just download and install [Kortomony.apk](./Kortomony.apk)
 
 Proceed to describe how to install / setup one's local environment / get started with the project.
 
