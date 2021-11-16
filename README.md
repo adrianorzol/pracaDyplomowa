@@ -1,5 +1,5 @@
 # Implementation of mobile game using GPS
-#### Localization mobile game created in Unity for my Engineer's Thesis
+#### Mobile game using location  created in Unity for my Engineer's Thesis
 
 ## Table of Contents
 * [General Info](#general-information)
