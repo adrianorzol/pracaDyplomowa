@@ -39,44 +39,29 @@ List the ready features here:
 <img src="./screenshots/lapanie.png" alt="catching a Kortomon" width="200"/>
 <img src="./screenshots/plecak.png" alt="your collection" width="200"/>
 </p>
-<!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
-To run app on Android device just download and install [Kortomony.apk](./Kortomony.apk)
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+- To run app on Android device just download and install [Kortomony.apk](./Kortomony.apk)
+- You need a device with android 5.0 or higher
+- You have to be in area of Kortowo Campus in Olsztyn, otherwise use some mock location app
+- You can also use some Android emulator on your PC, personaly I used [LDPlayer](https://www.ldplayer.net/) to work on this project
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
-
+Project is:  _complete_, but there is room for improvement. Actually I don't have time for work on it.
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- Make iOS version
+- Create bigger map that includes faculties from other parts of the city
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- Fix problem with UI on different aspect ratio
+- Fix bug with multiple attempts of catching the same creature
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@adrianorzol](https://www.linkedin.com/in/adrian-orzol) - feel free to contact me!
 
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
