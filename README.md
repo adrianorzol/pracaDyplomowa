@@ -26,7 +26,6 @@
 
 
 ## Features
-List the ready features here:
 - Using GPS of your mobile device
 - All graphic stuff was created by myself
 
